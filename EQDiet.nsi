@@ -35,6 +35,8 @@ VIAddVersionKey ProductVersion ${PRODUCT_VERSION}.0.0
 ; License page
 !define MUI_LICENSEPAGE_CHECKBOX
 !insertmacro MUI_PAGE_LICENSE "Resources\LICENSE.txt"
+; Directory page
+!insertmacro MUI_PAGE_DIRECTORY
 ; Start menu page
 var ICONS_GROUP
 !define MUI_STARTMENUPAGE_NODISABLE
