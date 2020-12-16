@@ -1,0 +1,19 @@
+jobs:
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+
+  steps:
+  - task: nsis@2
+    inputs:
+      scriptFile: 'EQDiet.nsi'
+      justInclude: 'no'
+      includeMorePlugins: 'no'
+      includeCustomPlugins: 'no'
+  
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: '$(Pipeline.Workspace)\s\EQDiet-Setup.exe'
+      artifact: 'EQDiet Setup'
+      publishLocation: 'pipeline'
+    displayName: 'Publish Windows Pipeline Artifacts'
