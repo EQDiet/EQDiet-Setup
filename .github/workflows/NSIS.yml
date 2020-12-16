@@ -1,0 +1,24 @@
+name: NSIS
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: makensis
+        uses: joncloud/makensis-action@v3.4
+        with:
+          script-file: EQDiet.nsi
+      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: EQDiet-Setup.exe
