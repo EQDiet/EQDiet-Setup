@@ -10,6 +10,7 @@ jobs:
       justInclude: 'no'
       includeMorePlugins: 'no'
       includeCustomPlugins: 'no'
+    displayName: 'Building EQDiet-Setup.exe using NSIS'
   
   - task: PublishPipelineArtifact@1
     inputs:

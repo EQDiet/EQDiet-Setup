@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Building EQDiet-Setup.exe using makensis
+      - name: Building EQDiet-Setup.exe using NSIS
         uses: joncloud/makensis-action@v3.4
         with:
           script-file: EQDiet.nsi
