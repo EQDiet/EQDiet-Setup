@@ -17,7 +17,7 @@ VIAddVersionKey ProductName "${PRODUCT_NAME} ${PRODUCT_VERSION}"
 VIAddVersionKey CompanyName EQDiet
 VIAddVersionKey Comments "Installs ${PRODUCT_NAME} ${PRODUCT_VERSION} into your computer"
 VIAddVersionKey FileDescription "${PRODUCT_NAME} ${PRODUCT_VERSION} setup wizard"
-VIAddVersionKey LegalCopyright "© 2020, EQDiet"
+VIAddVersionKey LegalCopyright "© 2021, EQDiet"
 VIAddVersionKey FileVersion ${PRODUCT_VERSION}.0.0
 VIAddVersionKey ProductVersion ${PRODUCT_VERSION}.0.0
 
