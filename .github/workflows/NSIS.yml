@@ -18,8 +18,8 @@ jobs:
         with:
           script-file: EQDiet.nsi
           
-      - name: Upload a Build Artifact
+      - name: Upload EQDiet-Setup.exe Build Artifact
         uses: actions/upload-artifact@v2
         with:
           name: EQDiet Setup
-          path: EQDiet-Setup,exe
+          path: EQDiet-Setup.exe
