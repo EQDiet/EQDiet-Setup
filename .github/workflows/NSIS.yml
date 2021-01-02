@@ -21,5 +21,5 @@ jobs:
       - name: Upload EQDiet-Setup.exe Build Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: EQDiet Setup
+          name: EQDiet-Setup
           path: EQDiet-Setup.exe
